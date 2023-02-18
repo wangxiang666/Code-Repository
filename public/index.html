@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="<%= BASE_URL %>style/reset.css" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <script src="<%= BASE_URL %>topology/nodeModules/jquery/dist/jquery.js"></script>
+  <script src="<%= BASE_URL %>topology/nodeModules/lodash/lodash.js"></script>
+  <script src="<%= BASE_URL %>topology/nodeModules/backbone/backbone.js"></script>
+  <script src="<%= BASE_URL %>topology/nodeModules/graphlib/dist/graphlib.core.js"></script>
+  <script src="<%= BASE_URL %>topology/nodeModules/dagre/dist/dagre.core.js"></script>
+
+  <script src="<%= BASE_URL %>topology/build/package/rappid.js"></script>
+  <script src="<%= BASE_URL %>topology/js/config/halo.js"></script>
+  <script src="<%= BASE_URL %>topology/js/config/selection.js"></script>
+  <script src="<%= BASE_URL %>topology/js/config/inspector.js"></script>
+  <script src="<%= BASE_URL %>topology/js/config/stencil.js"></script>
+  <script src="<%= BASE_URL %>topology/js/config/toolbar.js"></script>
+  <script src="<%= BASE_URL %>topology/js/config/sample-graphs.js"></script>
+  <script src="<%= BASE_URL %>topology/js/views/maincopy.js"></script>
+  <script src="<%= BASE_URL %>topology/js/views/theme-picker.js"></script>
+  <script src="<%= BASE_URL %>topology/js/models/joint.shapes.app.js"></script>
+  <script src="<%= BASE_URL %>topology/js/views/navigator.js"></script>
+</body>
+
+</html>
